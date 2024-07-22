@@ -40,7 +40,7 @@ class Program
     {
         var firstName = GetArgumentValue(args, "FirstName");
         var lastName = GetArgumentValue(args, "LastName");
-        var salary = decimal.Parse(GetArgumentValue(args, "Salary"));
+        var salary = decimal.Parse(GetArgumentValue(args, "Salary"), System.Globalization.CultureInfo.InvariantCulture);
 
         var employee = new Employee
         {
@@ -52,6 +52,7 @@ class Program
         repository.AddEmployee(employee);
         Console.WriteLine("Сотрудник успешно добавлен.");
     }
+
 
     private static void HandleUpdate(string[] args, EmployeeRepository repository)
     {
