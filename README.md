@@ -14,19 +14,19 @@ EmployeeManagement - это консольное приложение, которое позволяет управлять спис
 ## Использование
 
 Добавление сотрудника
-- EmployeeManagement.exe -add FirstName:John LastName:Doe Salary:100.50
+- dotnet EmployeeManagement.dll -add FirstName:John LastName:Doe Salary:100.50
 
 Обновление данных сотрудника
-- EmployeeManagement.exe -update Id:1 FirstName:Jane
+- dotnet EmployeeManagement.dll -update Id:1 FirstName:Jane
 
 Получение данных сотрудника по ID
-- EmployeeManagement.exe -get Id:1
+- dotnet EmployeeManagement.dll -get Id:1
 
 Удаление сотрудника
-- EmployeeManagement.exe -delete Id:1
+- dotnet EmployeeManagement.dll -delete Id:1
 
 Получение списка всех сотрудников
-- EmployeeManagement.exe -getall
+- dotnet EmployeeManagement.dll -getall
 
 ## Установка и запуск
 
